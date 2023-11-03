@@ -5,8 +5,6 @@ import httplib2
 import requests
 import json
 
-#url = 'httos://sanmiguelinmobiliria.com' #--> únicamente si es una url que queremos indexar o desindexar
-
 SCOPES = [ "https://www.googleapis.com/auth/indexing" ]
 ENDPOINT = "https://indexing.googleapis.com/v3/urlNotifications:publish"
 
