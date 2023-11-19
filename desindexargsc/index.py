@@ -21,14 +21,9 @@ http = credentials.authorize(httplib2.Http())
 requests = {'https://dominio.com/' : 'URL_DELETED',
 }
  
-JSON_KEY_FILE = "personal.json"
  
 SCOPES = [ "https://www.googleapis.com/auth/indexing" ]
 ENDPOINT = "https://indexing.googleapis.com/v3/urlNotifications:publish"
- 
-# Authorize credentials
-credentials = ServiceAccountCredentials.from_json_keyfile_name(JSON_KEY_FILE, scopes=SCOPES)
-http = credentials.authorize(httplib2.Http())
  
 # Build service
 service = build('indexing', 'v3', credentials=credentials)
