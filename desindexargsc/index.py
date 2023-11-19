@@ -21,10 +21,6 @@ http = credentials.authorize(httplib2.Http())
 requests = {'https://dominio.com/' : 'URL_DELETED',
 }
  
- 
-SCOPES = [ "https://www.googleapis.com/auth/indexing" ]
-ENDPOINT = "https://indexing.googleapis.com/v3/urlNotifications:publish"
- 
 # Build service
 service = build('indexing', 'v3', credentials=credentials)
  
