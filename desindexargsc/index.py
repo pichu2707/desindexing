@@ -3,12 +3,11 @@ from googleapiclient.discovery import build
 from googleapiclient.http import BatchHttpRequest
 import httplib2
 import requests
-import json
 
 SCOPES = [ "https://www.googleapis.com/auth/indexing" ]
 ENDPOINT = "https://indexing.googleapis.com/v3/urlNotifications:publish"
 
-# service_account_file.json is the private key that you created for your service account.
+# personal.json es la clave privada que creó para su cuenta de Google.
 JSON_KEY_FILE = "personal.json"
 
 #Autorizar credenciales
@@ -21,7 +20,7 @@ http = credentials.authorize(httplib2.Http())
 requests = {'https://dominio.com/' : 'URL_DELETED',
 }
  
-# Build service
+# Creando el servicio
 service = build('indexing', 'v3', credentials=credentials)
  
 def insert_event(request_id, response, exception):
