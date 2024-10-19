@@ -24,10 +24,17 @@ requests = {'https://dominio.com/' : 'URL_DELETED',
 service = build('indexing', 'v3', credentials=credentials)
  
 def insert_event(request_id, response, exception):
-    if exception is not None:
-      print(exception)
-    else:
-      print(response)
+  """_summary_
+
+  Args:
+      request_id (any): Argumento para identificar de forma única la solicitud enviada.
+      response (any): Contiene la respuesta de la solicitud esperando que sea un 200 como que está todo correcto
+      exception (any): Captura y maneja las excepciones o errores que puedan ocurrir en el proceso 
+  """
+  if exception is not None:
+    print(exception)
+  else:
+    print(response)
  
 batch = service.new_batch_http_request(callback=insert_event)
  
