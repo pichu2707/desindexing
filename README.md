@@ -19,3 +19,6 @@ creado las credenciales.
 En alguno de los casos lo sabrás porque al ejecutar el script puedes tener errores *403*.
 
 Si tuvieras más problemas mándame toda la información posible [aquí](mailto:hola@javilazaro.es) e incluye por favor en el asunto que es por este código **Github Desindexing**
+
+<h3 align="left">Lenguaje utilizado:</h3>
+<a> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
